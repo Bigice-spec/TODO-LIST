@@ -1,0 +1,76 @@
+.container{
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    margin: auto;
+    backdrop-filter: blur(5px); 
+    box-shadow: 0 0 55px black;
+    top: 0; bottom: 0; right: 0; left: 0;
+}
+body{
+    background-color: gray;
+}
+.txt{
+    position: absolute;
+    height: 5px;
+    width: 60%;
+    margin: auto;
+    outline: none;
+    padding: 20px;
+    padding-right: 50px;
+    top: 25px; right: 0; left: 0;
+}
+.btn{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    cursor: pointer;
+    top: 25px; right: 50px;
+    background: transparent;
+    outline: none;
+    border: 0;
+}
+.list{
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    margin: auto;
+    right: 0; left: 0; bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.list::-webkit-scrollbar{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.todolist{
+    position: relative;
+    height: fit-content;
+    width: 55%;
+    right: 0;
+    text-align: left;
+    transition: 0.3s;
+    padding: 10px;
+    background: white;
+    cursor: pointer;
+    border-radius: 2px;
+    padding-right: 90px;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+.fa-check, .fa-trash{
+    position: absolute;
+    margin: auto;
+    height: 20px;
+    top: 0; bottom: 0; 
+}
+.fa-check{
+    right: 40px; 
+}
+.fa-trash{
+    right: 10px; 
+}
+.todolist:hover{
+    transform: scale(1.1);
+}
